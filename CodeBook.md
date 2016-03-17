@@ -7,17 +7,17 @@ The dataset has 180 observations (rows) and  68 variables (columns). Each row co
 NOTE; information on original data are given below as notes in this codebook
 
 ## Transformations from original data
-1 - Merged the training and the test sets to create one data set.
-2 - Extracted only the measurements on the mean and standard deviation for each measurement.
-3 - Simplfied activity names to name the activities in the data setdescriptively.
-4 - Appropriately labeled the data set with descriptive variable names.
-5 - From the data set in step 4, a second dataset was created, with the average of each variable for each activity and each subject.
+- Merged the training and the test sets to create one data set.
+- Extracted only the measurements on the mean and standard deviation for each measurement.
+- Simplfied activity names to name the activities in the data setdescriptively.
+- Appropriately labeled the data set with descriptive variable names.
+- From the data set in step 4, a second dataset was created, with the average of each variable for each activity and each subject.
 
 
 ## Data columns description:
 
--'activity': activity label (ranging from 1 to 6) and correspond to WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
--'subject' : an identifier of the subject who carried out the experiment (ranging from 1 to 30)
+- 'activity': activity label (ranging from 1 to 6) and correspond to WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
+- 'subject' : an identifier of the subject who carried out the experiment (ranging from 1 to 30)
 - All other columns are the computed averages for features for each subject and activity. The features are described below in detail: 
 
 ## Data variables for each subject and activity:
