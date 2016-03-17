@@ -18,11 +18,11 @@ NOTE; information on original data are given below as notes in this codebook
 
 - 'activity': activity label (ranging from 1 to 6) and correspond to WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
 - 'subject' : an identifier of the subject who carried out the experiment (ranging from 1 to 30)
-- All other columns are the computed averages for features for each subject and activity. These signals were used to estimate variables of the feature vector for each pattern: 
+- All other columns are the computed averages for features for each subject and activity. 
 
-'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+These signals were used to estimate variables of the feature vector for each pattern: '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
-Each signal below has a correspodning signal for mean and Standard deviation
+Each signal below has a correspodning signal for 'mean' and 'standard deviation'
 
 
 tBodyAcc-XYZ            # standard gravity units 'g'
