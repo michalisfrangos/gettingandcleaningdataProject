@@ -32,21 +32,37 @@ These signals were used to estimate variables of the feature vector for each pat
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
 tBodyAcc-XYZ
+
 tGravityAcc-XYZ         # standard gravity units 'g'
+
 tBodyAccJerk-XYZ        # standard gravity units 'g'
+
 tBodyGyro-XYZ           # radians/second
+
 tBodyGyroJerk-XYZ       # radians/second               
+
 tBodyAccMag             # standard gravity units 'g'
+
 tGravityAccMag          # standard gravity units 'g'
+
 tBodyAccJerkMag         # standard gravity units 'g'
+
 tBodyGyroMag            # radians/second
+
 tBodyGyroJerkMag        # radians/second
+
 fBodyAcc-XYZ            # standard gravity units 'g'
+
 fBodyAccJerk-XYZ        # standard gravity units 'g'
+
 fBodyGyro-XYZ           # radians/second 
+
 fBodyAccMag             # standard gravity units 'g'
+
 fBodyAccJerkMag         # standard gravity units 'g'
+
 fBodyGyroMag            # radians/second
+
 fBodyGyroJerkMag        # radians/second
 
 The set of variables estimated from these signals and used for theproject are: 
