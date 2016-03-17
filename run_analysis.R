@@ -8,8 +8,8 @@
 rm(list = ls()) 
 
 library(httr)
+library(plyr)
 library(dplyr)
-library(lubridate)
 
 
 if (!file.exists("downloads")) {
@@ -29,7 +29,7 @@ if (download_flag){
 
 
 #  read all data; this is executed only if read_flag = TRUE to save time
-read_flag = !TRUE
+read_flag <- TRUE
 if (read_flag){
         # common
         activity_labels <- read.table("UCI HAR Dataset/activity_labels.txt")
@@ -70,7 +70,7 @@ if (read_flag){
         total_acc_z_train  <- read.table("UCI HAR DAtaset/train/Inertial Signals/total_acc_z_train.txt")
         
         # save at workspace
-        save.image(file="workspace_project.RData")
+        #save.image(file="workspace_project.RData")
 } else {
         load(file="workspace_project.RData")
 }
@@ -83,7 +83,7 @@ varsNamesToKeep <- featuresNames[varsIndexToKeep]
 
 # combine train and test in X, extract mean and std , and rename
 X <- rbind(x_train,x_test)                              # combine rows of X
-X<-X[,varsIndexToKeep]
+X <-X[,varsIndexToKeep]
 colnames(X)<-varsNamesToKeep
 colnames(X) <- tolower(gsub("\\(\\)", "", names(X)))    # simpify X names
 
@@ -103,6 +103,12 @@ df <- cbind(X,Y) %>%cbind(subject)
 
 df_group <- group_by(df,activity,subject)
 df_mean <- as.data.frame(summarise_each(df_group,funs(mean)))
+
+# replace activity with descriptive names
+activity.indx   <- as.integer(activity_labels$V1)
+activity.labels <- as.character(activity_labels$V2)
+
+df_mean$activity <- mapvalues(df_mean$activity, from = activity.indx , to = activity.labels )
 
 #df_mean <- df_mean[1:5,1:6]
 #write.table(df_mean, "./data_cleaned", sep="\t") 
