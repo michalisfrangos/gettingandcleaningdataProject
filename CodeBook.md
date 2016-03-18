@@ -22,24 +22,23 @@ NOTE; information on original data are given below as notes in this codebook
 
 - Each signal below has a correspodning signal for 'mean' and 'standard deviation'
 - Also for each signal below the notation '-XYZ' is used to denote 3-axial signals in the X, Y or Z directions.
-- tBodyAcc-XYZ            # standard gravity units 'g'
-- tGravityAcc-XYZ         # standard gravity units 'g'
-- tBodyAccJerk-XYZ        # standard gravity units 'g'
-- tBodyGyro-XYZ           # radians/second
-- tBodyGyroJerk-XYZ       # radians/second               
-- tBodyAccMag             # standard gravity units 'g'
-- tGravityAccMag          # standard gravity units 'g'
-- tBodyAccJerkMag         # standard gravity units 'g'
-- tBodyGyroMag            # radians/second
-- tBodyGyroJerkMag        # radians/second
-- fBodyAcc-XYZ            # standard gravity units 'g'
-- fBodyAccJerk-XYZ        # standard gravity units 'g'
-- fBodyGyro-XYZ           # radians/second 
-- fBodyAccMag             # standard gravity units 'g'
-- fBodyAccJerkMag         # standard gravity units 'g'
-- fBodyGyroMag            # radians/second
-- fBodyGyroJerkMag        # radians/second
-
+- tBodyAcc-XYZ          # standard gravity units 'g';normalized and bounded in [-1,1]
+- tGravityAcc-XYZ       # standard gravity units 'g';normalized and bounded in [-1,1]
+- tBodyAccJerk-XYZ      # standard gravity units 'g';normalized and bounded in [-1,1]
+- tBodyGyro-XYZ         # radians/second            ;normalized and bounded in [-1,1]
+- tBodyGyroJerk-XYZ     # radians/second            ;normalized and bounded in [-1,1]                   
+- tBodyAccMag           # standard gravity units 'g';normalized and bounded in [-1,1]
+- tGravityAccMag        # standard gravity units 'g';normalized and bounded in [-1,1]
+- tBodyAccJerkMag       # standard gravity units 'g';normalized and bounded in [-1,1]
+- tBodyGyroMag          # radians/second            ;normalized and bounded in [-1,1]    
+- tBodyGyroJerkMag      # radians/second            ;normalized and bounded in [-1,1]    
+- fBodyAcc-XYZ          # standard gravity units 'g';normalized and bounded in [-1,1]
+- fBodyAccJerk-XYZ      # standard gravity units 'g';normalized and bounded in [-1,1]
+- fBodyGyro-XYZ         # radians/second            ;normalized and bounded in [-1,1]    
+- fBodyAccMag           # standard gravity units 'g';normalized and bounded in [-1,1]
+- fBodyAccJerkMag       # standard gravity units 'g';normalized and bounded in [-1,1]
+- fBodyGyroMag          # radians/second            ;normalized and bounded in [-1,1]    
+- fBodyGyroJerkMag      # radians/second            ;normalized and bounded in [-1,1]    
 
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
@@ -50,8 +49,6 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 
 
 ## Notes on Original data:
-
-The features from original data were normalized and bounded within [-1,1]
 
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
 
