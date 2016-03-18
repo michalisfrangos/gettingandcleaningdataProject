@@ -13,7 +13,7 @@ library(httr)
 library(plyr)
 library(dplyr)
 
-
+## DOWNLOADING and UNZIPING DATA
 if (!file.exists("downloads") & !file.exists("UCI HAR Dataset")) {
         message("- downloading data")
         dir.create("downloads")
@@ -34,8 +34,9 @@ if  (!file.exists("UCI HAR Dataset")){
         message("- data folder exists")      
 }
 
-#  read all data; this is executed only if read_flag = TRUE to save time
+##  READING DATA IN WORKSPACE
 message("- reading data in workspace")
+
 # common
 activity_labels <- read.table("UCI HAR Dataset/activity_labels.txt")
 features <- read.table("UCI HAR Dataset/features.txt")
@@ -49,14 +50,9 @@ y_test  <- read.table("UCI HAR DAtaset/test/y_test.txt")
 subject_train <- read.table("UCI HAR DAtaset/train/subject_train.txt")
 x_train <- read.table("UCI HAR DAtaset/train/X_train.txt")
 y_train <- read.table("UCI HAR DAtaset/train/y_train.txt")
-
 message("- data read")
-# save at workspace
-# save.image(file="workspace_project.RData")
-# load(file="workspace_project.RData")
 
-
-# 
+## CLEANING DATA
 message("- cleaning data")
 
 # find names of features to keep
@@ -95,4 +91,7 @@ write.csv(df_mean, 'data_cleaned.csv')
 write.table(df_mean, 'data_cleaned.txt', row.name=FALSE) 
 
 message("- data cleaned and saved in data_cleaned.txt and  data_cleaned.csv")
+
+# save.image(file="workspace_project.RData")
+# load(file="workspace_project.RData")
 
