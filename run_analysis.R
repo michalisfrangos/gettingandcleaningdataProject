@@ -20,14 +20,14 @@ if (!file.exists("downloads") & !file.exists("UCI HAR Dataset")) {
         fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
         download.file(fileUrl,destfile = "./downloads/project_data.zip",method = "auto") 
         dateDownloaded <- date()
-        message("data downloaded")
+        message("- data downloaded")
         #file.remove("./data.zip")
 } else {
         message("- data already downloaded")  
 }
 
 if  (!file.exists("UCI HAR Dataset")){
-        message("unzipping data")
+        message("- unzipping data")
         unzip("./downloads/project_data.zip")
         message("- data unzipped")
 } else {

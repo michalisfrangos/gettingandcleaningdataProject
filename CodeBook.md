@@ -16,7 +16,7 @@ NOTE; information on original data are given below as notes in this codebook
 
 ## Data columns description:
 
-1. 'activity': activity label (ranging from 1 to 6) and correspond to WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
+1. 'activity': activity label are WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
 2. 'subject' : an identifier of the subject who carried out the experiment (ranging from 1 to 30)
 3.  All other columns are the computed averages for features for each subject and activity:
 
