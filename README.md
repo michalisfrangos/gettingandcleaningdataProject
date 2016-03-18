@@ -18,7 +18,7 @@ Project for the course Getting and Cleaning data by John Hopkins on Coursera
 ## Transformations from original data
 - Merged the training and the test sets to create one data set.
 - Extracted only the measurements on the mean and standard deviation for each measurement.
-- Simplfied activity names to name the activities in the data setdescriptively.
+- Simplfied activity names to name the activities in the data set descriptively.
 - Appropriately labeled the data set with descriptive variable names.
 - From the data set in step 4, a second dataset was created, with the average of each variable for each activity and each subject.
 
