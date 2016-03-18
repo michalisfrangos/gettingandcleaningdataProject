@@ -3,8 +3,8 @@
 # frangos@frangos.eu
 
 # Set working directory
-workDir = "D:/FRANGOS_FOLDER/CoursesCertificates/Coursera_Spec_DataAnalysis_2016/GettingAndCleaningData/project"
-setwd(workDir)
+script.dir <- dirname(sys.frame(1)$ofile)
+setwd(script.dir)
 
 # clear workspace
 rm(list = ls()) 
