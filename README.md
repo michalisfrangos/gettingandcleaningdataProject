@@ -8,9 +8,9 @@ Project for the course Getting and Cleaning data by John Hopkins on Coursera
 - 'run_analysis.R': this is the R script to clean the dataset from the accelerometers of the Samsung Galaxy S smartphone. Details on original data are described in the codebook. 
 
 ## Instructions to run the script
-- The script download and unzips autoamtically 
-- The script automatically sets working directory to script directory
-- To run type in promt: source("run_analysis.R") 
+- The script downloads and unzips automatically 
+- The script sets working directory to script directory automatically
+- Run command: source("run_analysis.R") 
 - Cleaned data are saved as an output in 'data_cleaned.csv' ans a 'data_cleaned.txt'
 
 ## Transformations from original data
