@@ -1,8 +1,8 @@
 # Project Week 4
 
 # Set working directory
-# workDir = "D:/FRANGOS_FOLDER/CoursesCertificates/Coursera_Spec_DataAnalysis_2016/GettingAndCleaningData/project"
-# setwd(workDir)
+ workDir = "D:/FRANGOS_FOLDER/CoursesCertificates/Coursera_Spec_DataAnalysis_2016/GettingAndCleaningData/project"
+ setwd(workDir)
 
 # clear workspace
 rm(list = ls()) 
@@ -40,37 +40,37 @@ if (read_flag){
         x_test  <- read.table("UCI HAR DAtaset/test/X_test.txt")
         y_test  <- read.table("UCI HAR DAtaset/test/y_test.txt")
         
-        body_acc_x_test  <- read.table("UCI HAR DAtaset/test/Inertial Signals/body_acc_x_test.txt")
-        body_acc_y_test  <- read.table("UCI HAR DAtaset/test/Inertial Signals/body_acc_y_test.txt")
-        body_acc_z_test  <- read.table("UCI HAR DAtaset/test/Inertial Signals/body_acc_z_test.txt")
+        #body_acc_x_test  <- read.table("UCI HAR DAtaset/test/Inertial Signals/body_acc_x_test.txt")
+        #body_acc_y_test  <- read.table("UCI HAR DAtaset/test/Inertial Signals/body_acc_y_test.txt")
+        #body_acc_z_test  <- read.table("UCI HAR DAtaset/test/Inertial Signals/body_acc_z_test.txt")
         
-        body_gyro_x_test  <- read.table("UCI HAR DAtaset/test/Inertial Signals/body_gyro_x_test.txt")
-        body_gyro_y_test  <- read.table("UCI HAR DAtaset/test/Inertial Signals/body_gyro_y_test.txt")
-        body_gyro_z_test  <- read.table("UCI HAR DAtaset/test/Inertial Signals/body_gyro_z_test.txt")
+        #body_gyro_x_test  <- read.table("UCI HAR DAtaset/test/Inertial Signals/body_gyro_x_test.txt")
+        #body_gyro_y_test  <- read.table("UCI HAR DAtaset/test/Inertial Signals/body_gyro_y_test.txt")
+        #body_gyro_z_test  <- read.table("UCI HAR DAtaset/test/Inertial Signals/body_gyro_z_test.txt")
         
-        total_acc_x_test  <- read.table("UCI HAR DAtaset/test/Inertial Signals/total_acc_x_test.txt")
-        total_acc_y_test  <- read.table("UCI HAR DAtaset/test/Inertial Signals/total_acc_y_test.txt")
-        total_acc_z_test  <- read.table("UCI HAR DAtaset/test/Inertial Signals/total_acc_z_test.txt")
+        #total_acc_x_test  <- read.table("UCI HAR DAtaset/test/Inertial Signals/total_acc_x_test.txt")
+        #total_acc_y_test  <- read.table("UCI HAR DAtaset/test/Inertial Signals/total_acc_y_test.txt")
+        #total_acc_z_test  <- read.table("UCI HAR DAtaset/test/Inertial Signals/total_acc_z_test.txt")
         
         # train
         subject_train <- read.table("UCI HAR DAtaset/train/subject_train.txt")
         x_train <- read.table("UCI HAR DAtaset/train/X_train.txt")
         y_train <- read.table("UCI HAR DAtaset/train/y_train.txt")
         
-        body_acc_x_train  <- read.table("UCI HAR DAtaset/train/Inertial Signals/body_acc_x_train.txt")
-        body_acc_y_train  <- read.table("UCI HAR DAtaset/train/Inertial Signals/body_acc_y_train.txt")
-        body_acc_z_train  <- read.table("UCI HAR DAtaset/train/Inertial Signals/body_acc_z_train.txt")
+        #body_acc_x_train  <- read.table("UCI HAR DAtaset/train/Inertial Signals/body_acc_x_train.txt")
+        #body_acc_y_train  <- read.table("UCI HAR DAtaset/train/Inertial Signals/body_acc_y_train.txt")
+        #body_acc_z_train  <- read.table("UCI HAR DAtaset/train/Inertial Signals/body_acc_z_train.txt")
         
-        body_gyro_x_train  <- read.table("UCI HAR DAtaset/train/Inertial Signals/body_gyro_x_train.txt")
-        body_gyro_y_train  <- read.table("UCI HAR DAtaset/train/Inertial Signals/body_gyro_y_train.txt")
-        body_gyro_z_train  <- read.table("UCI HAR DAtaset/train/Inertial Signals/body_gyro_z_train.txt")
+        #body_gyro_x_train  <- read.table("UCI HAR DAtaset/train/Inertial Signals/body_gyro_x_train.txt")
+        #body_gyro_y_train  <- read.table("UCI HAR DAtaset/train/Inertial Signals/body_gyro_y_train.txt")
+        #body_gyro_z_train  <- read.table("UCI HAR DAtaset/train/Inertial Signals/body_gyro_z_train.txt")
         
-        total_acc_x_train  <- read.table("UCI HAR DAtaset/train/Inertial Signals/total_acc_x_train.txt")
-        total_acc_y_train  <- read.table("UCI HAR DAtaset/train/Inertial Signals/total_acc_y_train.txt")
-        total_acc_z_train  <- read.table("UCI HAR DAtaset/train/Inertial Signals/total_acc_z_train.txt")
+        #total_acc_x_train  <- read.table("UCI HAR DAtaset/train/Inertial Signals/total_acc_x_train.txt")
+        #total_acc_y_train  <- read.table("UCI HAR DAtaset/train/Inertial Signals/total_acc_y_train.txt")
+        #total_acc_z_train  <- read.table("UCI HAR DAtaset/train/Inertial Signals/total_acc_z_train.txt")
         
         # save at workspace
-        #save.image(file="workspace_project.RData")
+        # save.image(file="workspace_project.RData")
 } else {
         load(file="workspace_project.RData")
 }
